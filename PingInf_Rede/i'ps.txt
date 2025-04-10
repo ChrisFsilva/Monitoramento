@@ -1,0 +1,17 @@
+﻿Group: Link's de internet Group 1
+189.112.10.201 Link Algar
+
+Group: Externos Group 2
+8.8.1.1 Google
+1.1.1.1 Cloudflare
+
+Group: Loopback Group 3
+192.168.0.252
+
+Group: servidores Group 4
+192.168.0.252 AD principal
+192.168.0.251 AD reserva
+192.168.0.45 Backup rigido
+192.168.0.213 Servidor Oracle 
+192.168.0.210 Sankhya
+192.168.0.118 Simjob

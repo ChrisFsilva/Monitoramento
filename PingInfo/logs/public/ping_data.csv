@@ -1,0 +1,11 @@
+Nome do Host,Endereco IP,Endereco IP de Resposta,Contagem de Sucessos,Contagem de Falhas,Status do Ultimo Ping,Descricao,Ultimo Sucesso Em,Ultima Falha Em,Tempo Minimo de Ping,Tempo Maximo de Ping,Ordem,Desativado
+189-112-010-201.static.ctbctelecom.com.br,189.112.10.201,189.112.10.201,36968,263,Bem-sucedido,Link Algar,03/10/2024 14:46:21,02/10/2024 11:55:11,0.389,83.375,1,Nao
+8.8.1.1,8.8.1.1,8.8.1.1,36722,509,Bem-sucedido,Google,03/10/2024 14:46:21,03/10/2024 14:42:06,149.354,369.353,2,Nao
+one.one.one.one,1.1.1.1,1.1.1.1,36905,326,Bem-sucedido,Cloudflare,03/10/2024 14:46:21,03/10/2024 14:42:06,3.382,224.889,3,Nao
+GRANGER.DCALKO2.local,192.168.0.252,192.168.0.252,37231,0,Bem-sucedido,,03/10/2024 14:46:21,,0.309,1.684,4,Nao
+GRANGER.DCALKO2.local,192.168.0.252,192.168.0.252,37231,0,Bem-sucedido,AD principal,03/10/2024 14:46:21,,0.294,1.600,5,Nao
+VOLDEMORT.DCALKO2.local,192.168.0.251,,23357,13873,Tempo Limite da Solicitacao,AD reserva,02/10/2024 09:01:58,03/10/2024 14:46:14,0.497,64.847,6,Nao
+MAQ-0322.DCALKO2.local,192.168.0.45,192.168.0.45,37228,3,Bem-sucedido,Backup rigido,03/10/2024 14:46:21,03/10/2024 10:01:21,0.511,184.445,7,Nao
+DUMBLEDORE,192.168.0.213,192.168.0.213,37230,1,Bem-sucedido,Servidor Oracle ,03/10/2024 14:46:21,30/09/2024 13:40:31,0.352,184.338,8,Nao
+HAGRID,192.168.0.210,192.168.0.210,37229,2,Bem-sucedido,Sankhya,03/10/2024 14:46:21,30/09/2024 13:40:31,0.391,184.440,9,Nao
+MAQ-0239.DCALKO2.local,192.168.0.118,192.168.0.118,37229,2,Bem-sucedido,Simjob,03/10/2024 14:46:21,01/10/2024 07:40:32,0.374,117.985,10,Nao

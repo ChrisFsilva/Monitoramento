@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Pings</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: aliceblue;
+            text-align: center;
+            font-size: 50px;
+        }
+        #panels {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .panel {
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            height: 300px;
+            text-align: center;
+            border-radius: 3% 0%;
+            box-sizing: border-box;
+        }
+        .success {
+            border: 3px dashed #ffffff;
+            background-color: green;
+            color: white;
+        }
+        .failure {
+            border: 3px dashed #b13ddf;
+            background-color: red;
+            color: white;
+        }
+        h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            min-height: 40px;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .small-text {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Painel de registros ativos</h1>
+    <div id="panels"></div>
+
+    <script>
+        function loadCSV() {
+            Papa.parse("/ping_data.csv", {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    var data = results.data;
+                    var panelsDiv = document.getElementById("panels");
+                    
+                    // Limpar os painéis existentes
+                    panelsDiv.innerHTML = "";
+
+                    data.forEach(function(row, index) {
+                        if (row["Nome do Host"] && row["Endereco IP"]) { // Verifica se os dados existem
+                            var panel = document.createElement("div");
+                            panel.classList.add("panel");
+
+                            if (row["Status do Ultimo Ping"] === "Bem-sucedido") {
+                                panel.classList.add("success");
+                            } else {
+                                panel.classList.add("failure");
+                            }
+
+                            panel.innerHTML = `
+                                <h2>${row["Descricao"] || "Descrição não disponível"}</h2>
+                                <p>${row["Endereco IP"] || "Endereço IP não disponível"}</p>
+                                <p class="small-text">${row["Nome do Host"] || "Nome do Host não disponível"}</p>
+                                <p>Sucessos: ${row["Contagem de Sucessos"] || "Não disponível"} - ${row["Ultimo Sucesso Em"] || "Não disponível"}</p>
+                                <p>Falhas: ${row["Contagem de Falhas"] || "Não disponível"} - ${row["Ultima Falha Em"] || "Não disponível"}</p>
+                            `;
+
+                            panelsDiv.appendChild(panel);
+                        } else {
+                            console.warn("Linha com dados faltando: ", row);
+                        }
+                    });
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Carregar CSV na inicialização
+            loadCSV();
+            // Atualizar a cada 2 segundos
+            setInterval(loadCSV, 2000);
+        });
+    </script>
+</body>
+</html>

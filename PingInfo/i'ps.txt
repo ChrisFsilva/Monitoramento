@@ -1,0 +1,26 @@
+﻿Group: Pontos Group 1
+192.168.5.31 Ponto Adm
+192.168.5.32 Ponto Extrusora
+192.168.5.33 Ponto Calandra
+192.168.5.34 Ponto Estoque
+192.168.5.38 Ponto Tecelagem
+192.168.5.39 Ponto Manutenção
+
+Group: DVR Group 2
+192.168.0.200 DVR Calandra 1 
+192.168.0.201 DVR Calandra 2
+192.168.0.205 DVR Calandra G1
+192.168.0.206 DVR Calandra G2
+192.168.0.212 DVR Portaria frente
+192.168.0.7 DVR Portaria fundos
+192.168.6.8 DVR Extrusora
+192.168.0.218 DVR Manutenção
+192.168.0.219 DVR Perimetro Alko
+192.168.0.5 DVR Estoque
+192.168.0.208 DVR Rigido 1
+192.168.0.209 DVR Rigido 2
+192.168.0.216 DVR Rigido tigre
+192.168.0.217 DVR PCP - Calandra
+192.168.0.202 DVR Tecelagem 1 
+192.168.0.10 DVR Tecelagem 2 
+192.168.6.5 DVR TI
