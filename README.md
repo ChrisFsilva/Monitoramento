@@ -1,4 +1,4 @@
-<h1 align="center">Monitoramento de Dispositivos em Rede via Ping</h1>			
+<h1 align="center">Monitoramento de Dispositivos em Rede</h1>			
 <br>
 <h4 align="center"> 🚀 Concluído 🚀 </h4>
 
