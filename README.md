@@ -1,6 +1,6 @@
 <h1 align="center">Monitoramento de Dispositivos em Rede</h1>			
 <br>
-<h4 align="center"> 🚀 Concluído 🚀 </h4>
+<h4 align="center"> 🚀 Funcional / Em melhorias 🚀 </h4>
 
 Tabela de conteúdos
 =================
@@ -40,20 +40,17 @@ O sistema é composto por dois componentes principais:
 </p>
 
 Componentes Principais:
-
-pingInfo (extensão Windows): executa pings e gera banco de dados .csv.
-
-devices.csv: banco de dados com resultados de testes de conectividade.
-
-dashboard.html: painel web que exibe os resultados dos pings.
-
-app.js: script JavaScript que interpreta e exibe as informações do CSV.
-
-start servercors.bat: inicia um servidor local para permitir leitura de arquivos locais via navegador.
-
-markdown
-Copiar
-Editar
+```bash
+  pingInfo (extensão Windows): executa pings e gera banco de dados .csv.
+  
+  devices.csv: banco de dados com resultados de testes de conectividade.
+  
+  dashboard.html: painel web que exibe os resultados dos pings.
+  
+  app.js: script JavaScript que interpreta e exibe as informações do CSV.
+  
+  start servercors.bat: inicia um servidor local para permitir leitura de arquivos locais via navegador.
+```
 
 ---
 
@@ -72,16 +69,15 @@ Editar
 1. Instale e configure o **pingInfo** no Windows.
 2. Configure a lista de dispositivos no pingInfo para gerar o `devices.csv`.
 3. Execute o servidor local com permissões de CORS:
-   ```bash
-   start servercors.bat
-Acesse o dashboard.html via navegador (localhost).
+ ```bash
+ start servercors.bat
+ Acesse o dashboard.html via navegador (localhost).
 
 Importante: o uso do servidor é necessário para que o navegador consiga acessar o .csv via fetch().
+```
+#### Funcionalidades
+```bash
 
-Funcionalidades
-markdown
-Copiar
-Editar
 Monitoramento por Ping:
   Executa testes de conectividade com dispositivos de rede definidos.
 
@@ -99,22 +95,28 @@ Visualização no Navegador:
 
 Servidor Local:
   Necessário para leitura do CSV no navegador (via fetch e CORS).
-🛠 Tecnologias
+
+```
+## 🛠 Tecnologias
 As seguintes tecnologias foram usadas na construção do projeto:
 
-pingInfo (extensão para Windows) – ferramenta de monitoramento por ping
+- **[pingInfo (extensão para Windows) – ferramenta de monitoramento por ping](https://pinginfoview.com/)**
+- **[JavaScript](https://www.javascript.com/)** 
+- **[Servidor CORS Local – usado para carregar arquivos CSV no navegador]**
 
-JavaScript – lógica do painel e leitura do CSV
+## 🦸🏻‍♂️ Autor
 
-HTML5 e CSS3 – estrutura e visual do dashboard
+ <br>
+  <sub><b><p>Christopher Silva</p></b></sub></a>
+ <br />
 
-Servidor CORS Local – usado para carregar arquivos CSV no navegador
+[![Linkedin Badge](https://img.shields.io/badge/-Christopher%20Silva-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/chris-f-silva//)](https://www.linkedin.com/in/chris-f-silva/) 
+[![Gmail Badge](https://img.shields.io/badge/-chrisspfc.silva@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:daniel.rodrigues.soarees@gmail.com)](mailto:chrisspfc.silva@gmail.com)
 
-🦸🏻‍♂️ Autor
-<sub><b>Christopher Silva</b></sub>
+---
 
+## 📝 Licença
 
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes. [MIT](./LICENSE)
 
-📝 Licença
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
-MIT
+Feito por: Christopher Silva
