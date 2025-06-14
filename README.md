@@ -19,18 +19,26 @@ Tabela de conteúdos
 
 **Descrição**:  
 Este projeto realiza o monitoramento de dispositivos conectados à rede local por meio de testes de conectividade *ping*.  
-O sistema é composto por dois componentes principais:
+O sistema é composto por três componentes principais:
 
-- A extensão **pingInfo**, instalada no sistema Windows, que realiza os pings em uma lista de dispositivos e gera um banco de dados `.csv` contendo:
-  - status do último teste,
-  - número total de falhas e sucessos,
-  - data e hora da última ocorrência.
-
-- Um **painel web em JavaScript**, que lê o banco de dados `.csv` e exibe os resultados com cores indicativas:
-  - **verde** para dispositivos com ping bem-sucedido,
-  - **vermelho** para falhas,
-  - além de contadores e informações temporais.
-
+#### Coleta de Dados com o PingInfoView
+```bash
+O programa PingInfoView (ferramenta do Windows) é configurado para monitorar dispositivos através de ping contínuo.
+Ele usa o arquivo i'ps.txt para saber quais IPs e descrições pingar.
+Os resultados são exportados automaticamente para um arquivo .csv (ping_data.csv), contendo status, IP, nome do host, contagem de falhas/sucessos, entre outros.
+```
+#### Servidor Local (Node.js)
+```bash
+Um servidor Node.js simples, com express e cors, roda localmente na porta 8000.
+Ele serve o painel HTML (index.html) e permite acesso ao arquivo ping_data.csv.
+```
+#### Painel Web Dinâmico
+```bash
+O painel web lê o ping_data.csv a cada 2 segundos usando PapaParse.
+Para cada IP, cria um painel colorido:
+Verde para ping bem-sucedido - Vermelho para ping com falha
+Mostra informações como IP, nome do host, descrição, falhas/sucessos e últimas datas.
+```
 ---
 
 ## 🎨 Layout
