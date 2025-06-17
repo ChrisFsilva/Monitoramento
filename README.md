@@ -44,7 +44,7 @@ Mostra informações como IP, nome do host, descrição, falhas/sucessos e últi
 ## 🎨 Layout
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-<img alt="Painel de Monitoramento By Christopher Silva" title="#monitoramento-ping" src="https://i.pinimg.com/564x/61/c2/35/61c235fdc3cb24cf9f931ef30e2d2cc2.jpg" style="width:500px";/>
+<img alt="Painel de Monitoramento By Christopher Silva" title="#monitoramento-ping" src="https://i.pinimg.com/1200x/0c/1c/89/0c1c89ccdd86bcf83890e939f285c297.jpg" style="width:500px";/>
 </p>
 
 Componentes Principais:
