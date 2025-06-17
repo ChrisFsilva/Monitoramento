@@ -91,11 +91,11 @@ Componentes Principais:
 ```bash
   pingInfo (extensão Windows): executa pings e gera banco de dados .csv.
   
-  devices.csv: banco de dados com resultados de testes de conectividade.
+  ping_data.csv: banco de dados com resultados de testes de conectividade.
   
-  dashboard.html: painel web que exibe os resultados dos pings.
+  index.html: painel web que exibe os resultados dos pings.
   
-  app.js: script JavaScript que interpreta e exibe as informações do CSV.
+  server.js: script JavaScript que interpreta e exibe as informações do CSV.
   
   start servercors.bat: inicia um servidor local para permitir leitura de arquivos locais via navegador.
 ```
