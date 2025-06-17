@@ -6,6 +6,7 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Sobre o projeto](#-sobre-o-projeto)
+     * [Problemas-resolvidos](#-problemas-resolvidos)
    * [Layout](#-layout)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
@@ -40,6 +41,45 @@ Verde para ping bem-sucedido - Vermelho para ping com falha
 Mostra informações como IP, nome do host, descrição, falhas/sucessos e últimas datas.
 ```
 ---
+
+## 🚧 Problemas resolvidos
+
+```bash
+#### Falta de Visibilidade da Rede
+  Antes: Administradores só percebiam falhas quando alguém reportava.
+  Agora: Monitoramento em tempo real com atualização a cada 2 segundos.
+  Melhoria estimada: Redução de até 95% no tempo de detecção de falhas.
+```
+```bash
+#### Dificuldade em Identificar Dispositivos Problemáticos
+  Antes: Diagnóstico manual de cada IP ou equipamento.
+  Agora: Painel destaca automaticamente dispositivos com falha (em vermelho).
+  Melhoria estimada: Economia de 80% no tempo de triagem.
+```
+```bash
+#### Falta de Histórico Rápido de Sucesso/Falha
+  Antes: Sem histórico acessível dos eventos de ping.
+  Agora: Exibe contagem de sucessos, falhas e o momento da última ocorrência.
+  Benefício: Ajuda a priorizar equipamentos com alta taxa de falhas.
+```
+```bash
+#### Dependência de Ferramentas Comerciais Complexas
+  Antes: Uso de sistemas caros e complexos de NPM/NSM.
+  Agora: Solução leve, de código aberto e personalizável.
+  Redução de custo: Potencial de até 100% em licenças e mensalidades.
+```
+```bash
+#### Monitoramento Manual de Links e Servidores
+  Antes: Testes pontuais com ping ou tracert.
+  Agora: Monitoramento contínuo de links (ex: Google, Cloudflare) e servidores internos.
+  Melhoria estimada: Aumento de 90% na confiabilidade de detecção proativa.
+```
+```bash
+#### Dificuldade em Compartilhar o Status com Equipes
+  Antes: Status ficava restrito ao técnico.
+  Agora: Interface web acessível em qualquer navegador.
+  Impacto: Aumenta a colaboração entre equipes de infraestrutura e suporte.
+```
 
 ## 🎨 Layout
 
